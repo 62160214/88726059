@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        p{
+        color : blue;
+        }
+    </style>
+    <script>
+        function namein(n) {
+        ////ให้ตัวแปร div อ้างถึงแทกที่กำหนด id เป็น disp/////
+        div = document.getElementById('nn');
+        div.innerHTML = "";
+        div.innerHTML += "Hello " + n + " ";
+    }
+    </script>
+</head>
+<body>
+    <p>1.โปรมแกรมทักทาย Hello World</p>
+    <input type="text" onkeyup="namein(this.value);">
+    <div id="nn"></div>
+        
+        
+       
+</body>
+</html>
